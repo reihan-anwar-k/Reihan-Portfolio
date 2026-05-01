@@ -319,6 +319,17 @@ img{
     padding: 5px;
 }
 
+@media (max-width: 768px) {
+    .contact-me-input {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+}
+
 #copyright{
     display: flex;
     flex-direction: column;
