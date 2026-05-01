@@ -327,6 +327,12 @@ img{
 
     .contact-container {
         padding: 20px;
+        gap: 20px;
+    }
+
+    .contact-details {
+        width: 90%;
+        box-sizing: border-box;
     }
 }
 
