@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reihan Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="icon" type="image/svg+xml" href="FavIcon.svg">
+</head>
+<body>
+    <div class="navbar">
+        <a id="nav-reihan">REIHAN</a>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <section id="home" class="reveal">
+        <div class="hero">
+            <div class="name-role">
+                <h1 class="slide-name">REIHAN ANWAR K</h1>
+                <h2 class="slide-role">Frontend Developer</h2>
+            </div>
+            <img src="ProfilePic.png" alt="Reihan Profile Picture" class="profile-pic">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="reveal">About</h2>
+        <p class="reveal">I'm a passionate frontend developer focused on creating clean, responsive, and user-friendly web experiences. I enjoy turning ideas and designs into functional websites using modern technologies like HTML, CSS, JavaScript, and React, with a strong emphasis on performance and accessibility.<br><br>I have a keen interest in UI/UX design and pay close attention to detail in layout, spacing, and user interaction. I believe great websites are not just built—they're experienced, which is why I aim to create intuitive and engaging interfaces.<br><br>I'm always learning and exploring new tools to improve my skills and stay current with industry trends. I value clean, maintainable code and enjoy working on projects that challenge me to grow.<br><br>I'm currently seeking opportunities to contribute, learn, and build meaningful digital experiences.<br></p>
+    </section>
+
+    <section id="skills">
+        <h2 id="skills" class="reveal">Skills</h2>
+        <div class="skills" class="reveal">
+            <div class="technical-skills" class="reveal">
+                <h2 class="reveal">Technical Skills</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>React.js</p>
+                <p>Figma</p>
+                <p>Git & GitHub</p>
+            </div>
+            <div class="soft-skills" class="reveal">
+                <h2 class="reveal">Soft Skills</h2>
+                <p>Communication</p>
+                <p>Leadership</p>
+                <p>Adaptability</p>
+                <p>Learning Mentality</p>
+                <p>Problem Solving</p>
+                <p>Team Player</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="projects-container" class="reveal">
+            <div class="project-card">
+                <h3>Simple Calculator App</h3>
+                <p>A simple calculator built using HTML, CSS, and JavaScript that performs basic arithmetic operations like addition, subtraction, multiplication, and division with a clean and user-friendly interface.</p>
+            </div>
+            <div class="project-card">
+                <h3>To Do App</h3>
+                <p>A simple to-do app built using HTML, CSS, and JavaScript that allows users to add, manage, and delete tasks with a clean and user-friendly interface.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A simple weather app built using HTML, CSS, and JavaScript that fetches real-time weather data from an API and displays temperature, conditions, and location details in a clean and user-friendly interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2 id="contact-details-h2">Contact Details</h2>
+                <div class="contact-p">
+                    <p>Phone : <a href="tel:+918921466219">(+91) 8921466219</a></p>
+                    <p>Email : <a href="mailto:0708reihan@gmail.com">0708reihan@gmail.com</a></p>
+                    <p>LinkedIn : <a href="https://www.linkedin.com/in/reihan-anwar-k-35b231308">LinkedIn Profile</a></p>
+                    <p>GitHub : <a href="https://github.com/reihan-anwar-k" target="_blank">reihan-anwar-k</a></p>
+                </div>
+            </div>
+            <div class="contact-me-input" class="reveal">
+                <h2 id="contact-me">Contact Me</h2>
+                <input id="name" type="text" placeholder="Enter your name">
+                <input id="email" type="email" placeholder="Enter your email">
+                <textarea name="message" id="message" rows="4" placeholder="Enter your message"></textarea>
+                <button id="BtnSend" type="submit" onclick="sendMail()">Send</button>
+            </div>
+        </div>
+        <p id="copyright">&copy; 2026 Reihan Anwar K. All rights reserved.</p>
+    </section>
+    <!-- Email JS Library -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "GRFSOWPBiBQLGPETv",
+        });
+    })();
+    </script>
+    <script src="Portfolio.js"></script>
+</body>
+</html>
